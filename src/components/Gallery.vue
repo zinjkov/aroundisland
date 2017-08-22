@@ -44,9 +44,9 @@
       }
     },
     mounted() {
-      const domain = 'http://127.0.0.1:8000/';
-//      const domain = 'http://www.aroundisland.ru/';
-      this.src_img = 'http://127.0.0.1:8000/' + this.last_img;
+//      const domain = 'http://127.0.0.1:8000/';
+      const domain = 'http://www.aroundisland.ru/';
+      this.src_img = domain + this.last_img;
     },
     computed: {
       ...mapGetters(

@@ -28,8 +28,8 @@
 
     computed: {
       srcImg: function () {
-//          const domain = 'http://www.aroundisland.ru/';
-        const domain = 'http://127.0.0.1:8000/';
+        const domain = 'http://www.aroundisland.ru/';
+//        const domain = 'http://127.0.0.1:8000/';
         return domain + this.info.image;
       },
       Fields: function () {

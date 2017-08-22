@@ -24,7 +24,7 @@ Vue.use(VueResource);
 const URL = 'http://aroundisland.ru/api';
 const local_URL = 'http://127.0.0.1:8000/api';
 
-Vue.http.options.root = local_URL;
+Vue.http.options.root = URL;
 
 
 var vue = new Vue({
