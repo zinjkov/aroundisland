@@ -67,19 +67,30 @@
         </div>
       </b-card>
     </div>
-    <div class="container">
-      <h3>Партнеры?</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo id, dignissim scelerisque velit. In bibendum, eros sit amet cursus convallis, risus arcu porta lectus, non facilisis elit massa at augue. Suspendisse a varius lorem. Phasellus in hendrerit velit, vel tristique odio. Praesent dignissim lobortis sapien et tempor. Fusce purus urna, vestibulum ut eros at, laoreet placerat urna. Vivamus eu lobortis felis, in efficitur eros. Suspendisse potenti. Duis vitae justo quis est dapibus mollis. Suspendisse nisl nunc, finibus vel tempus quis, mattis quis ante. Etiam odio risus, maximus a est nec, laoreet molestie nisi. Fusce at mauris a risus venenatis aliquam eu id metus.
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
 
-        Curabitur quam lacus, dapibus ac tincidunt eu, porta eu neque. Proin id nisl mi. Praesent malesuada velit leo, et ornare sapien placerat vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras molestie libero erat, sed ullamcorper turpis rhoncus vel. Pellentesque nec odio dolor. Ut sed tristique eros. Nullam tortor eros, rutrum eget urna eu, facilisis lacinia nibh. Phasellus a gravida ipsum. Ut mattis varius faucibus. Integer non laoreet felis. Morbi finibus fermentum nibh. Duis congue venenatis lacus, a hendrerit velit placerat sed. Vivamus venenatis enim nec risus ornare tristique. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          <h3>Партнеры?</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo id, dignissim scelerisque velit. In bibendum, eros sit amet cursus convallis, risus arcu porta lectus, non facilisis elit massa at augue. Suspendisse a varius lorem. Phasellus in hendrerit velit, vel tristique odio. Praesent dignissim lobortis sapien et tempor. Fusce purus urna, vestibulum ut eros at, laoreet placerat urna. Vivamus eu lobortis felis, in efficitur eros. Suspendisse potenti. Duis vitae justo quis est dapibus mollis. Suspendisse nisl nunc, finibus vel tempus quis, mattis quis ante. Etiam odio risus, maximus a est nec, laoreet molestie nisi. Fusce at mauris a risus venenatis aliquam eu id metus.
 
-        Morbi tincidunt, magna nec ornare elementum, augue lectus molestie elit, eget fringilla leo lacus et diam. Proin sodales vel purus nec tincidunt. Morbi sit amet nisl eget magna fermentum condimentum eu in turpis. Morbi commodo quam ac quam euismod varius sed nec leo. Integer vitae quam lobortis, facilisis ante sit amet, cursus tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse id nisi condimentum, auctor dui id, ultricies eros. Donec eu dapibus nisi, in dapibus sem. Quisque velit ligula, convallis eget sem nec, bibendum lobortis enim.
+            Curabitur quam lacus, dapibus ac tincidunt eu, porta eu neque. Proin id nisl mi. Praesent malesuada velit leo, et ornare sapien placerat vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras molestie libero erat, sed ullamcorper turpis rhoncus vel. Pellentesque nec odio dolor. Ut sed tristique eros. Nullam tortor eros, rutrum eget urna eu, facilisis lacinia nibh. Phasellus a gravida ipsum. Ut mattis varius faucibus. Integer non laoreet felis. Morbi finibus fermentum nibh. Duis congue venenatis lacus, a hendrerit velit placerat sed. Vivamus venenatis enim nec risus ornare tristique. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
-        Aliquam pretium libero massa. Duis vel quam porta, tempus leo vitae, condimentum dui. Pellentesque sit amet elementum ipsum, quis aliquet ipsum. Donec vitae sapien lorem. Nunc augue odio, vehicula vel facilisis in, finibus hendrerit mi. Mauris porta a libero sit amet sodales. Donec cursus mollis mauris vitae tristique. Phasellus sit amet sollicitudin nisl. Nullam laoreet ut sem non mattis. Sed tempus lacus vel odio porta gravida. Aenean blandit facilisis ipsum, sed luctus sapien fringilla ut. Curabitur ullamcorper mi ut nisi commodo, in condimentum orci euismod.
+            Morbi tincidunt, magna nec ornare elementum, augue lectus molestie elit, eget fringilla leo lacus et diam. Proin sodales vel purus nec tincidunt. Morbi sit amet nisl eget magna fermentum condimentum eu in turpis. Morbi commodo quam ac quam euismod varius sed nec leo. Integer vitae quam lobortis, facilisis ante sit amet, cursus tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse id nisi condimentum, auctor dui id, ultricies eros. Donec eu dapibus nisi, in dapibus sem. Quisque velit ligula, convallis eget sem nec, bibendum lobortis enim.
 
-        Praesent quis ante id mauris congue blandit vitae non nibh. Sed facilisis eleifend neque non efficitur. Pellentesque fermentum consectetur felis sed dictum. Donec sed ornare nisl. Donec gravida volutpat dui. Etiam non purus arcu. Proin malesuada risus diam, et cursus orci tempus ut. Nullam condimentum quis urna eu volutpat. Nulla dapibus ipsum ipsum, eget feugiat tellus consequat ege</p>
+            Aliquam pretium libero massa. Duis vel quam porta, tempus leo vitae, condimentum dui. Pellentesque sit amet elementum ipsum, quis aliquet ipsum. Donec vitae sapien lorem. Nunc augue odio, vehicula vel facilisis in, finibus hendrerit mi. Mauris porta a libero sit amet sodales. Donec cursus mollis mauris vitae tristique. Phasellus sit amet sollicitudin nisl. Nullam laoreet ut sem non mattis. Sed tempus lacus vel odio porta gravida. Aenean blandit facilisis ipsum, sed luctus sapien fringilla ut. Curabitur ullamcorper mi ut nisi commodo, in condimentum orci euismod.
 
+            Praesent quis ante id mauris congue blandit vitae non nibh. Sed facilisis eleifend neque non efficitur. Pellentesque fermentum consectetur felis sed dictum. Donec sed ornare nisl. Donec gravida volutpat dui. Etiam non purus arcu. Proin malesuada risus diam, et cursus orci tempus ut. Nullam condimentum quis urna eu volutpat. Nulla dapibus ipsum ipsum, eget feugiat tellus consequat ege</p>
+
+
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+      </div>
     </div>
   </div>
 
@@ -90,7 +101,15 @@
 
   export default {
     components: {Icon},
-    name: 'home'
+    name: 'home',
+    data () {
+      return {
+        access_token: ""
+      }
+    },
+    mounted() {
+      this.$store.dispatch('fetch_position_list')
+    }
   }
 </script>
 
@@ -102,6 +121,8 @@
 
   .topic {
     background-image: url(../../static/board1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     min-height: 311px;
   }
 
