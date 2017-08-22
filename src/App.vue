@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <around-header></around-header>
 
     <router-view></router-view>
@@ -12,8 +11,13 @@
 <script>
   import AroundHeader from './components/shared/AroundHeader.vue'
   import AroundFooter from "./components/shared/AroundFooter";
+  import Api from './Api'
   export default {
     name: 'app',
+    created() {
+//      this.$store.dispatch('fetch_position_count')
+//        console.log(this.$store.dispatch(''))
+    },
     components: {
       AroundFooter,
       AroundHeader
