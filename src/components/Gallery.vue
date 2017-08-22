@@ -53,10 +53,7 @@
 <style scoped>
   .gallery {
     display: inline-flex;
-
     margin-top: 10px;
-
-    background-color: gray;
   }
 
   img {

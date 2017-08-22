@@ -35,3 +35,12 @@ var vue = new Vue({
   components: { App }
 });
 
+function update() {
+  vue.$store.dispatch('fetch_position_list')
+}
+
+function start_update() {
+  setInterval(() => update(), 5000);
+}
+update();
+start_update();

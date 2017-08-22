@@ -14,7 +14,7 @@ export default {
     context.commit('set_downloaded', i);
   },
   fetch_position_count(context){
-    Api.getCount().then((response => {
+    Api.fetchBoardInfoCount().then((response => {
       context.commit('update_count', response.data);
       if (parseInt(response.data.data) !== parseInt(context.state.downloaded)) {
         context.dispatch('fetch_all_position');
@@ -23,7 +23,7 @@ export default {
   },
 
   fetch_position(context, id) {
-    Api().getPosition(id).then((response => {
+    Api.getPosition(id).then((response => {
       context.commit('add_position', response.data);
     }))
   },

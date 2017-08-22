@@ -1,20 +1,19 @@
 <template>
   <b-navbar
-
     class="aroundHeader" toggleable type="light" variant="link" toggle-breakpoint="md">
 
     <b-nav-toggle target="nav_collapse"></b-nav-toggle>
 
     <b-navbar-brand href="#"><img src="static/logo.png"></b-navbar-brand>
-    <b-navbar-brand href="#"><img src="static/around_logo.jpeg" style="max-height: 50px; max-width: 50px">
+    <b-navbar-brand href="#"><img src="static/island_logo.jpeg" style="max-height:60px">
     </b-navbar-brand>
 
 
     <b-collapse is-nav id="nav_collapse">
 
-      <b-nav is-nav-bar>
-        <b-nav-item href="#"><span>Вокруг Острова!</span></b-nav-item>
-      </b-nav>
+      <!--<b-nav is-nav-bar>-->
+      <!--<b-nav-item href="#"><span>Вокруг Острова!</span></b-nav-item>-->
+      <!--</b-nav>-->
 
       <!-- Right alignd nav items -->
       <b-nav is-nav-bar class="ml-auto">
