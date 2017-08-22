@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
 import * as VueGoogleMaps from 'vue2-google-maps';
+import VueResource from 'vue-resource-2'
+import store from './store/store'
 
 Vue.component('icon', Icon);
 Vue.use(BootstrapVue);
@@ -18,9 +20,18 @@ Vue.use(VueGoogleMaps, {
   }
 });
 
-new Vue({
+Vue.use(VueResource);
+const URL = 'http://aroundisland.ru/api';
+const local_URL = 'http://127.0.0.1:8000/api';
+
+Vue.http.options.root = local_URL;
+
+
+var vue = new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
-})
+});
+
