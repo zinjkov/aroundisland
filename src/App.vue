@@ -21,6 +21,9 @@
     components: {
       AroundFooter,
       AroundHeader
+    },
+    mounted() {
+      this.$store.dispatch('fetch_position_list')
     }
   }
 </script>
