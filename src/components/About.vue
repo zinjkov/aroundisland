@@ -20,112 +20,12 @@
       </div>
       <div class="whoiswho">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6" v-for="item in team_list">
             <b-card>
-              <img src="../assets/logo.png">
-              <h4>ФИО</h4>
+              <img :src="domain + item.avatar">
+              <h4>{{item.name}}</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-                id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-              </p>
-            </b-card>
-          </div>
-          <div class="col-lg-6">
-            <b-card>
-              <img src="../assets/logo.png">
-              <h4>ФИО</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-                id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-              </p>
-            </b-card>
-          </div>
-          <div class="col-lg-6">
-            <b-card>
-              <img src="../assets/logo.png">
-              <h4>ФИО</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-                id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-              </p>
-            </b-card>
-          </div>
-          <div class="col-lg-6">
-            <b-card>
-              <img src="../assets/logo.png">
-              <h4>ФИО</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-                id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-              </p>
-            </b-card>
-          </div>
-          <div class="col-lg-6">
-            <b-card>
-              <img src="../assets/logo.png">
-              <h4>ФИО</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-                id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-              </p>
-            </b-card>
-          </div>
-          <div class="col-lg-6">
-            <b-card>
-              <img src="../assets/logo.png">
-              <h4>ФИО</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-                id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-              </p>
-            </b-card>
-          </div><div class="col-lg-6">
-          <b-card>
-            <img src="../assets/logo.png">
-            <h4>ФИО</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-              id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-            </p>
-          </b-card>
-        </div>
-          <div class="col-lg-6">
-            <b-card>
-              <img src="../assets/logo.png">
-              <h4>ФИО</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-                id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-              </p>
-            </b-card>
-          </div>
-          <div class="col-lg-6">
-            <b-card>
-              <img src="../assets/logo.png">
-              <h4>ФИО</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-                id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-              </p>
-            </b-card>
-          </div>
-          <div class="col-lg-6">
-            <b-card>
-              <img src="../assets/logo.png">
-              <h4>ФИО</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-                id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
+                {{item.description}}
               </p>
             </b-card>
           </div>
@@ -137,9 +37,25 @@
 </template>
 
 <script>
+  import {mapGetters} from "vuex";
 
   export default {
-    name: 'about'
+    name: 'about',
+    data() {
+      return {
+        domain: 'http://127.0.0.1:8000/'
+      }
+    },
+    mounted(){
+      this.$store.dispatch('fetch_team_list');
+    },
+    computed: {
+      ...mapGetters(
+        [
+          'team_list'
+        ]
+      )
+    }
   }
 </script>
 
