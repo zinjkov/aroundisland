@@ -4,19 +4,9 @@
       <div class="container">
         <div class="row">
           <b-card class="col-lg-4">
-            <img :src=src_img>
+            <img src="../../static/board2.jpg">
             <div class="card-view">
               <b-button variant="primary">С лодки</b-button>
-            </div>
-          </b-card>
-          <b-card class="col-lg-4"><img src="../../static/board2.jpg">
-            <div class="card-view">
-              <b-button variant="primary">СМИ</b-button>
-            </div>
-          </b-card>
-          <b-card class="col-lg-4"><img src="../../static/board2.jpg">
-            <div class="card-view">
-              <b-button variant="primary">After-Party</b-button>
             </div>
           </b-card>
         </div>
