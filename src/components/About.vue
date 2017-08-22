@@ -43,7 +43,8 @@
     name: 'about',
     data() {
       return {
-        domain: 'http://127.0.0.1:8000/'
+//        domain: 'http://127.0.0.1:8000/',
+        domain: 'http://www.aroundisland.ru/'
       }
     },
     mounted(){
