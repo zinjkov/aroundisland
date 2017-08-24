@@ -2,8 +2,8 @@
  * Created by zinjk on 03.08.2017.
  */
 
-const domain = 'http://127.0.0.1:8000/';
-// const domain = 'http://www.aroundisland.ru';
+// const domain = 'http://127.0.0.1:8000/';
+const domain = 'http://www.aroundisland.ru/';
 
 
 function getPositionFrom(m) {
@@ -29,7 +29,9 @@ export default {
     if (state.positions.length !== 0) {
       return state.positions.map((item) => {
         return domain + item.image;
-      })
+      }).filter((item) => {
+        return !item.includes('#')
+      });
     } else {
       return []
     }

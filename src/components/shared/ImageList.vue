@@ -5,7 +5,6 @@
       <img :src="imageModal">
     </b-modal>
     <div class="container">
-      ImageList
       <div class="row">
         <img v-for="image in imageList"
              class="col-lg-3"
@@ -43,6 +42,7 @@
 <style scoped>
   img {
     height: 35%;
+    margin-bottom: 5px;
   }
 
   .wrapper {
