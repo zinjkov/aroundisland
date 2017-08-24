@@ -4,6 +4,8 @@ import Home from '@/components/Home'
 import Gallery from '@/components/Gallery'
 import About from '@/components/About'
 import Tracker from '@/components/Tracker'
+import Admin from '@/components/Admin'
+import Analytics from '@/components/admin/Analytics.vue'
 
 Vue.use(Router);
 
@@ -28,6 +30,18 @@ export default new Router({
       path: '/tracker',
       name: 'tracker',
       component: Tracker
+    },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: Admin,
+      children: [
+        {
+          path: '/admin/analytics',
+          name: 'analytics',
+          component: Analytics
+        },
+      ]
     },
   ]
 })

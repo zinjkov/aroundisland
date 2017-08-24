@@ -31,7 +31,7 @@ export default {
         return domain + item.image;
       }).filter((item) => {
         return !item.includes('#')
-      });
+      }).reverse();
     } else {
       return []
     }
@@ -78,4 +78,32 @@ export default {
     }
   },
 
+  battery_dataset: state => {
+    if (state.positions.length !== 0) {
+      return state.positions.map(item => item['vcc'])
+    } else {
+      return [0, 0];
+    }
+  },
+  speed_dataset: state => {
+    if (state.positions.length !== 0) {
+      return state.positions.map(item => item['speed_gps'])
+    } else {
+      return [0, 0];
+    }
+  },
+  time_dataset: state => {
+    if (state.positions.length !== 0) {
+      return state.positions.map(item => item['created_at'])
+    } else {
+      return [0, 0];
+    }
+  },
+  satellites_dataset: state => {
+    if (state.positions.length !== 0) {
+      return state.positions.map(item => item['satellites_gps'])
+    } else {
+      return [0, 0];
+    }
+  },
 }
