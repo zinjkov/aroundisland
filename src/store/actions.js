@@ -38,4 +38,10 @@ export default {
       context.commit('add_team_list', response.data);
     }))
   },
+
+  fetch_gallery_list(context) {
+    Api.fetchGalleryList().then((response => {
+      context.commit('add_gallery_list', response.data);
+    }))
+  },
 }

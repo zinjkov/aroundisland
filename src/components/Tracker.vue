@@ -1,10 +1,14 @@
 <template>
   <div class="tracker">
+    <b-modal class="container" v-model="show" size="lg">
+      <img :src="modalImage" class="img-modal">
+    </b-modal>
+
     <gmap-map
       class="map"
-      :center="{lat: parseFloat(last_position.latitude_gps),
-                lng: parseFloat(last_position.longitude_gps)}"
+      :center=mapCenter
       :zoom="16"
+      :options="{gestureHandling: 'greedy'}"
     >
 
       <gmap-info-window
@@ -23,20 +27,23 @@
 
         </info-window>
       </gmap-info-window>
-
-      <gmap-marker
-        v-for="(m, i) in get_waypoint_list"
-        :position="m"
-        :clickable="true"
-        :draggable="false"
-        @click="onMarkerClick(i)"
-      >
-      </gmap-marker>
-
+      <gmap-cluster
+            :gridSize="30">
+        <gmap-marker
+          v-for="(m, i) in get_waypoint_list"
+          :position="m"
+          :clickable="true"
+          :draggable="false"
+          @click="onMarkerClick(i)"
+          :icon="getIconMarker(i)"
+        >
+        </gmap-marker>
+      </gmap-cluster>
       <gmap-polyline
         :path="path"
         :editable="false"
         :deepWatch="true"
+        :options="{strokeColor: '#00FF00'}"
       >
         <gmap-circle
           :radius="3"
@@ -49,6 +56,7 @@
 <script>
   import {mapGetters} from "vuex";
   import InfoWindow from "./shared/InfoWindow.vue";
+
   export default {
     name: 'tracker',
     components: {InfoWindow},
@@ -67,7 +75,8 @@
         },
 
         modal_show: false,
-
+        show: false,
+        modalImage: 'media/board/#',
         info_pos: {lat: 0, lng: 0}
       }
     },
@@ -77,7 +86,8 @@
           'get_waypoint_list',
           'last_position',
           'path',
-          'position_list'
+          'position_list',
+          'mapCenter'
         ]
       )
     },
@@ -89,20 +99,34 @@
         this.info_opened = true;
       },
       onShowClick: function (marker) {
-        this.clicked_marker = this.position_list[marker];
-        this.modal_show = true;
+        if (this.info_obj.image !== 'media/board/#') {
+          this.modalImage = 'http://aroundisland.ru/' + this.info_obj.image;
+          this.show = true;
+        }
       },
+      getIconMarker: function (idx) {
+        if (this.position_list[idx].image === 'media/board/#')
+          return '../../static/markerwioutphto.png';
+        else
+          return '../../static/markerwithphoto.png';
+      }
     }
   }
 </script>
 
 <style scoped>
   .map {
-    min-height: 91vh;
+    min-height: 88vh;
     max-width: 99.0vw;
   }
 
   .tracker {
 
+  }
+
+  .img-modal {
+    position: relative;
+    max-width: 100%;
+    max-height: 500px
   }
 </style>

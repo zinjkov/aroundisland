@@ -39,4 +39,39 @@ export default class Api {
     return Vue.http.get('team/list');
   }
 
+  static fetchGalleryList() {
+    return Vue.http.get('gallery/list');
+  }
+
+  static fetchPhotoList(id) {
+    return Vue.http.get('gallery/photo/list', {id: id});
+  }
+
+  static fetchLastBoardList() {
+    return Vue.http.get('board/latest_path');
+  }
+
+  static fetchWaypointList() {
+    return Vue.http.get('waypoints/get/without');
+  }
+
+
+  static saveWaypoints(waypoints) {
+    let data = {path: waypoints};
+    console.log(data);
+    return Vue.http.post('waypoints/post/', data);
+  }
+
+  static updateWaypoints() {
+    return Vue.http.post('waypoints/update/');
+  }
+
+  static deleteWaypoints() {
+    return Vue.http.post('waypoints/delete/');
+  }
+  static fetchPathList() {
+    return Vue.http.get('path/get/');
+  }
+
+
 };

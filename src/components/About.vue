@@ -2,21 +2,7 @@
   <div class="about">
     <div class="container">
       <div class="about-team">
-          <h3>как и зачем собрались вообще</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-          id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-          id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-          id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Duis vel magna a risus dictum ullamcorper. Phasellus purus metus, iaculis sed justo
-          id, dignissim scelerisque velit. In bibendum, eros sit amet cursus
-        </p>
+          <h3>Команда</h3>
       </div>
       <div class="whoiswho">
         <div class="row">
@@ -61,5 +47,15 @@
 </script>
 
 <style scoped>
-
+  img {
+    width: 324px;
+    height: 343px;
+  }
+  .about-team {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  p {
+    text-align: justify;
+  }
 </style>

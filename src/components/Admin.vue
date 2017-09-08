@@ -15,7 +15,19 @@
             <b-button-group>
               <b-nav-item>
                 <b-button variant="link">
+                  <router-link to="/admin/tracker"><span><icon name="map-o"></icon>Трекер</span>
+                  </router-link>
+                </b-button>
+              </b-nav-item>
+              <b-nav-item>
+                <b-button variant="link">
                   <router-link to="/admin/analytics"><span><icon name="area-chart"></icon> Аналитика</span>
+                  </router-link>
+                </b-button>
+              </b-nav-item>
+              <b-nav-item>
+                <b-button variant="link">
+                  <router-link to="/admin/waypointeditor"><span><icon name="pencil"></icon>Проложить маршрут</span>
                   </router-link>
                 </b-button>
               </b-nav-item>
@@ -32,14 +44,19 @@
 
 <script>
   import {mapGetters} from "vuex";
+  import Api from "../Api";
 
   export default {
-    name: 'about',
+    name: 'admin',
     data() {
-      return {}
+      return {
+
+      }
     },
     mounted(){
-
+      Api.fetchWaypointList().then(response => {
+          this.$store.commit('add_waypoint_list', response.data);
+      })
     },
     computed: {
       ...mapGetters(

@@ -87,10 +87,10 @@
             this.dataset = this.battery_dataset;
             break;
           case 1:
-            this.dataset = this.speed_dataset;
+            this.dataset = this.satellites_dataset;
             break;
           case 2:
-            this.dataset = this.satellites_dataset;
+            this.dataset = this.speed_dataset;
             break;
           default:
             break;

@@ -29,4 +29,17 @@ export default {
   add_team_list(state, newList) {
     state.team_list = newList.data;
   },
+
+  add_gallery_list(state, newList) {
+    state.gallery_list = newList.data;
+  },
+
+  add_waypoint_list(state, newList) {
+    state.waypoint_list = newList.data;
+  },
+
+  clear_waypoint_list(state) {
+    state.waypoint_list = [];
+  }
+
 }

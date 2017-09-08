@@ -6,6 +6,8 @@ import About from '@/components/About'
 import Tracker from '@/components/Tracker'
 import Admin from '@/components/Admin'
 import Analytics from '@/components/admin/Analytics.vue'
+import WaypointEditor from '@/components/admin/WaypointEditor.vue'
+import AdminTracker from '@/components/admin/AdminTracker.vue'
 
 Vue.use(Router);
 
@@ -40,6 +42,16 @@ export default new Router({
           path: '/admin/analytics',
           name: 'analytics',
           component: Analytics
+        },
+        {
+          path: '/admin/waypointeditor',
+          name: 'waypointeditor',
+          component: WaypointEditor
+        },
+        {
+          path: '/admin/tracker',
+          name: 'admintracker',
+          component: AdminTracker
         },
       ]
     },

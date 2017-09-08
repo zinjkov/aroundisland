@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <img v-show="info.image!==0" :src="srcImg" width="200px" height="200px"
+    <img v-if="info.image!=='media/board/#'" :src="srcImg" width="200px" height="200px"
          @click="$emit('show')">
     <div class="info-block"
          @click="$emit('show')">

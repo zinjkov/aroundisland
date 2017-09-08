@@ -15,7 +15,11 @@ export default new Vuex.Store({
     positions: [],
     downloaded: 0,
     pointCount: 0,
-    team_list: []
+    team_list: [],
+    gallery_list: [],
+    waypoint_list: [],
+    path_list: []
+
   },
   actions: actions.default,
   getters: getters.default,

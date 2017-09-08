@@ -2,7 +2,7 @@
   <div class="wrapper">
     <b-modal class="container" v-model="show" size="lg">
       <div slot="modal-footer"></div>
-      <img :src="imageModal">
+      <img :src="imageModal" class="img-modal">
     </b-modal>
     <div class="container">
       <div class="row">
@@ -52,5 +52,8 @@
 
   .sb-modal {
     width: 1000px;
+  }
+  .img-modal {
+    position:relative; max-width: 100%; max-height: 500px
   }
 </style>
