@@ -39,16 +39,23 @@
         >
         </gmap-marker>
       </gmap-cluster>
+
       <gmap-polyline
         :path="path"
         :editable="false"
         :deepWatch="true"
         :options="{strokeColor: '#00FF00'}"
       >
-        <gmap-circle
-          :radius="3"
-        ></gmap-circle>
       </gmap-polyline>
+
+      <gmap-marker
+        :position="last_forward"
+        :clickable="true"
+        :draggable="false"
+        @click="onMarkerClick(i)"
+      >
+      </gmap-marker>
+
     </gmap-map>
   </div>
 </template>
@@ -87,7 +94,8 @@
           'last_position',
           'path',
           'position_list',
-          'mapCenter'
+          'mapCenter',
+          'last_forward'
         ]
       )
     },

@@ -171,5 +171,15 @@ export default {
 
   waypoints: state => {
     return state.waypoint_list;
+  },
+
+  last_forward: state => {
+    if (state.positions.length !== 0) {
+      return {lat: parseFloat(state.positions[state.positions.length - 1].latitude_point),
+        lng: parseFloat(state.positions[state.positions.length - 1].longitude_point)}
+    } else {
+      return {lat: 43.001002,
+        lng: 131.845682};
+    }
   }
 }

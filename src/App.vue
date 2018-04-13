@@ -26,6 +26,7 @@
     },
     mounted() {
       this.$store.dispatch('fetch_position_list')
+      /* yandex metrika code */
       (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
           try {
@@ -49,6 +50,7 @@
           d.addEventListener("DOMContentLoaded", f, false);
         } else { f(); }
       })(document, window, "yandex_metrika_callbacks");
+      /* yandex metrika code end */
     }
   }
 </script>
