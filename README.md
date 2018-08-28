@@ -1,6 +1,6 @@
 # aroundisland
 
-> frontend vue SPA for tracking automatic bouard
+> frontend vue SPA for tracking autonomus board
 
 ## Build Setup
 
